@@ -2,8 +2,10 @@
 
 using namespace std;
 
+// Function interface
 int calcGCD(int num1, int num2);
 
+// main
 int main()
 {	
 	int num1;
@@ -18,6 +20,7 @@ int main()
 	cin >> num2;
 	cout << endl;
 
+	// validation for inputs 
 	while (num1 < 1 || num2 < 1)
 	{
 		if (num1 < 1)
@@ -39,6 +42,9 @@ int main()
 	
 	return 0;
 }
+// end of main
+
+// Function definition
 
 // Returns the greatest common divisor between num1 and num2
 // Both user values should be greater than 1
